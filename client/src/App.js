@@ -1,4 +1,4 @@
-import Home from './Components/Home.js'
+import Home from './Components/Home.jsx'
 import CodeState from './Context/CodeState'
 
 function App() {

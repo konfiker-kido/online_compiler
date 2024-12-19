@@ -8,11 +8,14 @@ const CodeState = (props) => {
   const [defaultCode, setDefaultCode] = useState(DefaultCodeProvider.cpp)
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
+  const [version, setVersion] = useState('')
+
   const runCode = async () => {
     const data = {
       lang,
       code,
       input,
+      version
     }
     setIsRunning(true)
     const response = await fetch('http://localhost:5000/run', {
@@ -22,7 +25,7 @@ const CodeState = (props) => {
       },
       body: JSON.stringify(data),
     })
-
+     console.log("code==:  ",code)
     const out = await response.json()
     setOutput(out)
     setIsRunning(false)
@@ -32,6 +35,8 @@ const CodeState = (props) => {
     <CodeContext.Provider
       value={{
         lang,
+        version,
+        setVersion,  
         setLang,
         isRunning,
         runCode,

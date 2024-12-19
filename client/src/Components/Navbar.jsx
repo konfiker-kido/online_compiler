@@ -16,15 +16,6 @@ const Navbar = () => {
     <nav>
       <div className='navLeft'>
         <h1 className='logo'>Codify</h1>
-        <div className='langOption'>
-          <label htmlFor='Language'>Select Language</label>
-          <select value={lang} onChange={(e) => handleChange(e.target.value)}>
-            <option value='cpp'>C++</option>
-            <option value='nodejs'>JavaScript</option>
-            <option value='java'>Java</option>
-            <option value='python3'>Python</option>
-          </select>
-        </div>
         <button disabled={isRunning} className='button-19' onClick={runCode}>
           <img className='runimg' src={runsvg} alt='runImg' />
           Run
