@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='navLeft'>
-        <h1 className='logo'>Codify</h1>
+        <h1 className='logo'>Sudarshan</h1>
         <button disabled={isRunning} className='button-19' onClick={runCode}>
           <img className='runimg' src={runsvg} alt='runImg' />
           Run
