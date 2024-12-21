@@ -4,7 +4,7 @@ it is also provide an interface to give some input to the program.
 I have used jDoodle apis for compiling the code.
 
 # Live Demo Link
-heroku link: https://codify-online-compiler.herokuapp.com/
+
 
 # Installation:
 1- clone this project then cd codify-online-compiler.
